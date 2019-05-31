@@ -3,13 +3,12 @@ language: node_js
 node_js:
   - 10.0.0
 
-cache:
-  directories:
-  - "node_modules"
-
 branches:
   only:
   - master
+
+before_install:
+  - rm -rf node_modules
 
 install:
   - npm install
