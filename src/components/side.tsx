@@ -45,9 +45,9 @@ export default () => {
   const list: IList[] = [{ name: '孙笑川', path: '/li1' }, { name: '孙笑川', path: '/li2' }, { name: '孙笑川', path: '/li3' }, { name: '孙笑川', path: '/li4' }, { name: '孙笑川', path: '/li5' }, { name: '孙笑川', path: '/li6' }, { name: '孙笑川', path: '/li7' }]
 
   const getList = async (): Promise<any> => {
-      return await new Promise(((resolve, reject) => {
-         resolve(list)
-       }))
+    return await new Promise(((resolve, reject) => {
+      resolve(list)
+    }))
   }
 
   const toList = (e: any): void => {
